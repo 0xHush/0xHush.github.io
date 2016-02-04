@@ -1,0 +1,61 @@
+body, div, ul, li, h1, h2, h3, p,
+header, nav, section, article, footer {
+	padding: 0;
+	margin: 0;
+}
+
+#wrapper {
+	background: red;
+	width: 1000px;
+	margin: auto;
+}
+
+header h1 {
+	text-align: center;
+}
+
+header ul {
+	background: purple;
+	font-size: 0; /* to handle the space between li */
+	text-align: center;
+}
+
+header ul li {
+	font-size: 18px;
+	display: inline-block;
+}
+
+#main-wrapper {
+	background: yellow;
+	padding-left: 10px;
+}
+
+section::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+article {
+	background: green;
+	width: 320px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	float: left;
+}
+
+footer {
+	background: blue;
+}
+
+@media screen and (max-width: 1000px) {
+	#wrapper {
+		width: 670px;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	#wrapper {
+		width: 340px;
+	}
+}
